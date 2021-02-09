@@ -35,31 +35,81 @@ https://codepen.io/Franchifsera/pen/poNEzRO?editors=1100
     17. What is CSS used for? 
 	used to style plain html code
     18. How to we select an element? Example - every h2 on the page
-    h2{'css commands}
+    h2{
+        'css commands
+        }
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    we can have multiple classes and multipe elements can share the same class but ids are unique and only be used once per page.
+    Ex. class would be used if we have multiple div attributes we want to style, and for id we can name a section a unique identifier so we can style that whole section the same.
     20. How do we select classes in CSS?
+    '.class'
     21. How do we select a p element with a single class of “human””?
+    .human p{
+
+    }
     22. What is a parent child selector? When would this be useful? 
+    it selects the direct child of the specified element, it would be useful to style specific elements wihin an element.
     23. How do you select all links within a div with the class of sidebar?
+    .sidebar a{
+
+    }
     24. What is a pseudo selector?
+    used to define a special state of an element/part of an element
     25. What do we use the change the spacing between lines?
+    line height: 8px;
     26. What do we use to change the spacing between letters?
+    letter-spacing: 3px;
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transformation: uppercase, lowercase, capitalize
     28. How do I add a 1px border around my div that is dotted and black?
+    div{
+        border: 1px dotted black;
+    }
     29. How do I select everything on the page? 
+     *{
+
+     }
     30. How do I write a comment in CSS?
+    /* comment */
     31. How do I find out what file I am in, when I am using the command line? 
+    pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rmdir "directory name', this is dangerous because it will delete everything in the folder as well.
     34. Why should I use version control? 
+    To keep track of changes to your code and to keep everyone on the team working on the same/latest version.
     35. How often should I commit to github?
+    As often as possible when finishing a new app or every 20 minutes.
     36. What is the command we would use to push our repo up to github? 
+    git push -u origin 'branch name'
     37. Walk me through Lambda's git flow. 
+    once to you get your repo or after creating a repo:
+    create fork
+    add collaborators 
+    in your directory in command line clone repo to local
+    cd to cloned directory
+    code . to open cloned cirectory
+    make changes
+    git add. 
+    git commit -m "comment of changes"
+    git push -u origin 'branchname'
+    got github repo
+    change to personal branch
+    open pull request 
+    change base to your personal forked repo not lambda base
+    create pull request
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        block starts on new line inline does not. Block takes the full width left to right, inline takes up as much width as necessary.
     2. What happens when an element is positioned absolutely? 
+        it no longer exists in the normal document layout flow. Instead it sits on its own layer separate from everything else. Usefule to create isolated features that don;t intefere with the layout of other elements.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Give the element a percentage width or use auto.
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        block:<address><div><footer> inline:<span><img> inline-block:<button>
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        The box model is a series of boxes around an html element consisting of margin, border, and padding. The fix is box-sizing: border-box that results in 20px padding and 5px borders to results in 100px by 100px
+        
